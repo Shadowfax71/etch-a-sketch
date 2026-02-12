@@ -1,16 +1,17 @@
+body {
+    text-align: center;
+}
 #container {
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
-    width: 800px;
-    height: 800px;
+    width: 960px;
+    height: 960px;
     margin: 20px auto;
     box-sizing: border-box;
 }
 
-.square {
-    width: 49.75px; /*because 800px/16 = 50px per quare, however it was wrapping wrong */
-    height: 49.75px;
+.square { /* removed width and height, will work with JS */
     border: 1px solid black;
     box-sizing: border-box;
     background-color: lightgray;
