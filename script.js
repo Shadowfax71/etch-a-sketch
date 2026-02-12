@@ -35,7 +35,10 @@ function createGrid(size) {
         square.style.height = (100 / size) + "%";
 
         square.addEventListener("mouseover", function () {
-            this.style.backgroundColor = "black";
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            this.style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
         });
 
         container.appendChild(square);
