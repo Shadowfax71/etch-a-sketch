@@ -1,7 +1,9 @@
 // Create a 16x16 grid of square divs
-const container = document.querySelector("container");
+const container = document.querySelector("#container");
+const gridSize = 16;
 
-for (let i = 0; i < 256; i++) { //256 because it's 16*16
+for (let i = 0; i < gridSize * gridSize; i++) { 
     const square = document.createElement('div');
+    square.classList.add('square');
     container.appendChild(square);
 }

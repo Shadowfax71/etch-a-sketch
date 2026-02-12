@@ -7,3 +7,11 @@
     margin: 20px auto;
     box-sizing: border-box;
 }
+
+.square {
+    width: 25px; /*because 400px/16 = 25px per quare */
+    height: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
